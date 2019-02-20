@@ -6,6 +6,13 @@ var json = {
     clearInvisibleValues: "onHidden",
     questions: [
         {
+            type: "radiogroup",
+            name: "hospital",
+            title: "Visually in good physical condition?",
+            choices: ["Yes", "No"],
+            isRequired: true
+        },
+        {
             type: "text",
             name: "name",
             title: "Name",
@@ -17,6 +24,7 @@ var json = {
             name: "lastname",
             title: "Last Name",
             placeHolder: "Enter Last Name",
+            visibleIf: "{hospital}='Yes'",
             isRequired: true
         },
         {
@@ -43,7 +51,6 @@ var json = {
             type: "text",
             name: "age",
             title: "Age Group",
-            isRequired: true,
             placeHolder: "Enter age",
             isRequired: true
         }, {
