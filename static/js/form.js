@@ -7,18 +7,18 @@ var json = {
     questions: [
         {
             type: "radiogroup",
-            name: "age18",
-            title: "Are you 18 years old or older?",
+            name: "age",
+            title: "Age Group",
             isRequired: true,
             choices: [
-                "Yes", "No"
+                "<18", "18-25", ">25"
             ],
             colCount: 0
         }, {
             type: "radiogroup",
             name: "haveKids",
             title: "Do you have a kid(s)?",
-            visibleIf: "{age18}='Yes'",
+            visibleIf: "{age}='18-25' or '>25'",
             isRequired: true,
             choices: [
                 "Yes", "No"
