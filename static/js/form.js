@@ -71,7 +71,7 @@ var json = {
             type: "radiogroup",
             name: "prev_acc",
             title: "What was your previous accomodation like?",
-            visibleIf: "{prev_acc} != 'Prision'",
+            visibleIf: "{post_code} notempty and {prev_acc} != 'Prision'",
             isRequired: true,
             choices: ["Private owned","Private rented","Friends/Family", "Prision", "Shelter", "Council flat"],
             colCount: 0
