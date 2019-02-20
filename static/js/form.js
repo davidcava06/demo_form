@@ -49,6 +49,15 @@ var json = {
             colCount: 0
         }, 
         {
+            type: "radiogroup",
+            name: "nightsout",
+            title: "How many nights have you been rough sleeping?",
+            visibleIf: "{post_code} notempty",
+            isRequired: true,
+            choices: ["1 day","1 month or less", "more"],
+            colCount: 0
+        },
+        {
             type: "text",
             name: "age_group",
             title: "Age Group",
