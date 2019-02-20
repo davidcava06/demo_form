@@ -17,6 +17,7 @@ var json = {
             name: "name",
             title: "Name",
             placeHolder: "Enter Name",
+            visibleIf: "{hospital}='Yes'",
             isRequired: true
         },
         {
@@ -35,6 +36,7 @@ var json = {
             choices: [
                 "M", "F", "Other"
             ],
+            visibleIf: "{hospital}='Yes'",
             colCount: 0
         }, 
         {
@@ -45,6 +47,7 @@ var json = {
             choices: [
                 "National", "Non-National"
             ],
+            visibleIf: "{hospital}='Yes'",
             colCount: 0
         }, 
         {
@@ -52,6 +55,7 @@ var json = {
             name: "age",
             title: "Age Group",
             placeHolder: "Enter age",
+            visibleIf: "{hospital}='Yes'",
             isRequired: true
         }, {
             type: "radiogroup",
