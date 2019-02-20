@@ -32,8 +32,7 @@ var json = {
             name: "last_name",
             title: "Last Name",
             placeHolder: "Enter Last Name",
-            visibleIf: "{post_code} notempty",
-            isRequired: true
+            visibleIf: "{post_code} notempty"
         },
         {
             type: "radiogroup",
