@@ -6,19 +6,25 @@ var json = {
     clearInvisibleValues: "onHidden",
     questions: [
         {
-            type: "radiogroup",
+            type: "text",
+            name: "name",
+            title: "Name",
+            isRequired: true,
+            placeHolder: "Enter name",
+            isRequired: true
+        },
+        {
+            type: "text",
             name: "age",
             title: "Age Group",
             isRequired: true,
-            choices: [
-                "<18", "18-25", ">25"
-            ],
-            colCount: 0
+            placeHolder: "Enter age",
+            isRequired: true
         }, {
             type: "radiogroup",
             name: "haveKids",
             title: "Do you have a kid(s)?",
-            visibleIf: "{age}='18-25' or {age}='>25'",
+            visibleIf: "{age}>=17",
             isRequired: true,
             choices: [
                 "Yes", "No"
