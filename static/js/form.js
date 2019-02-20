@@ -30,6 +30,16 @@ var json = {
             colCount: 0
         }, 
         {
+            type: "radiogroup",
+            name: "ethnicity",
+            title: "Ethnicity Group",
+            isRequired: true,
+            choices: [
+                "National", "Non-National"
+            ],
+            colCount: 0
+        }, 
+        {
             type: "text",
             name: "age",
             title: "Age Group",
