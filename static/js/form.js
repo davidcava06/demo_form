@@ -50,7 +50,7 @@ var json = {
             type: "radiogroup",
             name: "haveKids",
             title: "Do you have a kid(s)?",
-            visibleIf: "{age}>=17",
+            visibleIf: "{age_group}>=17",
             isRequired: true,
             choices: ["Yes", "No"],
             colCount: 0
