@@ -1,6 +1,6 @@
-// Survey
-//     .StylesManager
-//     .applyTheme("default");
+Survey
+    .StylesManager
+    .applyTheme("default");
 
 var json = {
     clearInvisibleValues: "onHidden",
