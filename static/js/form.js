@@ -5,11 +5,18 @@ Survey
 var json = {
     clearInvisibleValues: "onHidden",
     questions: [
+        
+        {
+            type: "radiogroup",
+            name: "physical_cond",
+            title: "Does he/she have any significant visible physical damage?",
+            isRequired: true,
+            choices: ["Yes", "No"]
+        },
         {
             type: "text",
             name: "post_code",
             title: "Enter current location",
-            // placeHolder: "Enter Postcode",
             isRequired: true
         },
         {
@@ -69,7 +76,7 @@ var json = {
             type: "radiogroup",
             name: "prev_acc",
             title: "What was your previous accomodation like?",
-            visibleIf: "{age_group} > 15",
+            visibleIf: "{age_group} > 15 and {physical_cond}='No'",
             isRequired: true,
             choices: ["Private owned","Private rented","Friends/Family", "Prision", "Shelter", "Council flat"],
             colCount: 0
