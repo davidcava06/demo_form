@@ -60,11 +60,20 @@ var json = {
         },
         {
             type: "radiogroup",
-            name: "haveKids",
-            title: "Do you have a kid(s)?",
+            name: "prev_acc",
+            title: "What was your previous accomodation like?",
             visibleIf: "{age_group}>=17",
             isRequired: true,
-            choices: ["Yes", "No"],
+            choices: ["Friends/Family", "Prision", "Shelter", "Council flat"],
+            colCount: 0
+        },
+        {
+            type: "radiogroup",
+            name: "prev_acc",
+            title: "What was your previous accomodation like?",
+            visibleIf: "{prev_acc} != 'Prision'",
+            isRequired: true,
+            choices: ["Private owned","Private rented","Friends/Family", "Prision", "Shelter", "Council flat"],
             colCount: 0
         }
     ]    
