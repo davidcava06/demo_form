@@ -4,6 +4,8 @@ Survey
 
 var json = {
     clearInvisibleValues: "onHidden",
+    showProgressBar: "bottom",
+    goNextPageAutomatic: true,
     pages:  [
         {
             name: "general",
