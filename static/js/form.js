@@ -9,10 +9,26 @@ var json = {
             type: "text",
             name: "name",
             title: "Name",
-            isRequired: true,
-            placeHolder: "Enter name",
+            placeHolder: "Enter Name",
             isRequired: true
         },
+        {
+            type: "text",
+            name: "lastname",
+            title: "Last Name",
+            placeHolder: "Enter Last Name",
+            isRequired: true
+        },
+        {
+            type: "radiogroup",
+            name: "gender",
+            title: "Gender",
+            isRequired: true,
+            choices: [
+                "M", "F", "Other"
+            ],
+            colCount: 0
+        }, 
         {
             type: "text",
             name: "age",
