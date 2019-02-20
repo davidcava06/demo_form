@@ -44,9 +44,7 @@ var json = {
             name: "ethnicity",
             title: "Ethnicity Group",
             isRequired: true,
-            choices: [
-                "National", "Non-National"
-            ],
+            choices: ["National", "Non-National"],
             visibleIf: "{post_code} notempty",
             colCount: 0
         }, 
@@ -62,7 +60,7 @@ var json = {
             type: "radiogroup",
             name: "prev_acc",
             title: "What was your previous accomodation like?",
-            visibleIf: "{age_group} >= 17",
+            visibleIf: "{age_group} > 15",
             isRequired: true,
             choices: ["Private owned","Private rented","Friends/Family", "Prision", "Shelter", "Council flat"],
             colCount: 0
