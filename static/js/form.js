@@ -62,7 +62,7 @@ var json = {
             type: "radiogroup",
             name: "prev_acc",
             title: "What was your previous accomodation like?",
-            visibleIf: "{age_group}>=17",
+            visibleIf: "{age_group}>=17 and {post_code} notempty" ,
             isRequired: true,
             choices: ["Friends/Family", "Prision", "Shelter", "Council flat"],
             colCount: 0
