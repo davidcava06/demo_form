@@ -7,9 +7,17 @@ var json = {
     questions: [
         {
             type: "text",
+            name: "post_code",
+            title: "Enter current location",
+            placeHolder: "Enter Postcode",
+            isRequired: true
+        },
+        {
+            type: "text",
             name: "name",
             title: "Name",
             placeHolder: "Enter Name",
+            visibleIf: "{post_code} notempty",
             isRequired: true
         },
         {
@@ -17,6 +25,7 @@ var json = {
             name: "last_name",
             title: "Last Name",
             placeHolder: "Enter Last Name",
+            visibleIf: "{post_code} notempty",
             isRequired: true
         },
         {
@@ -27,6 +36,7 @@ var json = {
             choices: [
                 "M", "F", "Other"
             ],
+            visibleIf: "{post_code} notempty",
             colCount: 0
         }, 
         {
@@ -37,6 +47,7 @@ var json = {
             choices: [
                 "National", "Non-National"
             ],
+            visibleIf: "{post_code} notempty",
             colCount: 0
         }, 
         {
@@ -44,6 +55,7 @@ var json = {
             name: "age_group",
             title: "Age Group",
             placeHolder: "Enter age",
+            visibleIf: "{post_code} notempty",
             isRequired: true
         },
         {
