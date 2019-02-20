@@ -62,16 +62,7 @@ var json = {
             type: "radiogroup",
             name: "prev_acc",
             title: "What was your previous accomodation like?",
-            visibleIf: "{age_group}>=17 and {post_code} notempty" ,
-            isRequired: true,
-            choices: ["Friends/Family", "Prision", "Shelter", "Council flat"],
-            colCount: 0
-        },
-        {
-            type: "radiogroup",
-            name: "prev_acc",
-            title: "What was your previous accomodation like?",
-            visibleIf: "{post_code} notempty and {prev_acc} != 'Prision'",
+            visibleIf: "{age_group} >= 17",
             isRequired: true,
             choices: ["Private owned","Private rented","Friends/Family", "Prision", "Shelter", "Council flat"],
             colCount: 0
