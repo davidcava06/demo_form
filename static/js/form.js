@@ -1,6 +1,6 @@
-Survey
-    .StylesManager
-    .applyTheme("default");
+// Survey
+//     .StylesManager
+//     .applyTheme("default");
 
 var json = {
     clearInvisibleValues: "onHidden",
@@ -8,7 +8,6 @@ var json = {
     goNextPageAutomatic: true,
     pages:  [
         {
-            name: "general",
             questions: [
                 {
                     type: "text",
@@ -54,7 +53,6 @@ var json = {
             ]
         },
         {
-            name:'agepage',
             questions: [
                 {
                     type: "radiogroup",
@@ -62,9 +60,7 @@ var json = {
                     title: "Do you have a kid(s)?",
                     visibleIf: "{age}>=17",
                     isRequired: true,
-                    choices: [
-                        "Yes", "No"
-                    ],
+                    choices: ["Yes", "No"],
                     colCount: 0
                 }
             ]
