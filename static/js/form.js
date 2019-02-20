@@ -9,7 +9,7 @@ var json = {
             type: "text",
             name: "post_code",
             title: "Enter current location",
-            placeHolder: "Enter Postcode",
+            // placeHolder: "Enter Postcode",
             isRequired: true
         },
         {
