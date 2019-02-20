@@ -18,7 +18,7 @@ var json = {
             type: "radiogroup",
             name: "haveKids",
             title: "Do you have a kid(s)?",
-            visibleIf: "{age}='18-25' or '>25'",
+            visibleIf: "{age}='18-25' or {age}='>25'",
             isRequired: true,
             choices: [
                 "Yes", "No"
