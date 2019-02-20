@@ -54,7 +54,7 @@ var json = {
             type: "text",
             name: "age_group",
             title: "Age Group",
-            placeHolder: "Enter age",
+            placeHolder: "Enter age and hit Enter",
             visibleIf: "{post_code} notempty",
             isRequired: true
         },
